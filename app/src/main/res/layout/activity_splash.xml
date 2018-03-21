@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.itskshitizsh.doyouknow.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_id"
+            android:text="@string/welcome_message"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="serif"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="20dp"/>
+        <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mysplash" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_id"
+        android:text="@string/good_luck_wishes"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:padding="24dp"
+        />
+    </RelativeLayout>
+
+</LinearLayout>
