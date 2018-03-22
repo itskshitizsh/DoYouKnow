@@ -89,5 +89,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
     <string name="user_score">Your Score :</string>
 </resources>

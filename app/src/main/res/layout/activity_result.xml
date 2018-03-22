@@ -13,10 +13,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/user_score"
-        android:textSize="48sp"
-        android:textColor="@color/colorPrimaryDark"
         android:gravity="center"
+        android:text="@string/user_score"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="48sp"
         />
     <TextView
         android:id="@+id/score_text_view"
@@ -26,30 +26,30 @@
         android:textSize="48sp" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary" >
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Exit"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@color/background"
             android:onClick="exit"
-            android:background="#00A0A0"
-            android:layout_margin="8dp"
+            android:text="@string/exit"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="24sp" />
+            android:textSize="@dimen/textSize_24sp" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="#00A0A0"
-            android:layout_margin="8dp"
-            android:text="Play Again"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:background="@color/background"
             android:onClick="back"
+            android:text="@string/play_again"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="24sp" />
+            android:textSize="@dimen/textSize_24sp" />
         </LinearLayout>
 </LinearLayout>

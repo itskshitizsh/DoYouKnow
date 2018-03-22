@@ -19,14 +19,23 @@ public class ResultActivity extends AppCompatActivity {
         score_text_view.setText("\""+received_score+" out of 5\"");
     }
 
-    public void exit(View view)
-    {
+    /**
+     * exit method is called when Exit button is clicked and this will close the application.
+     *
+     * @param view
+     */
+    public void exit(View view) {
         moveTaskToBack(true);
         android.os.Process.killProcess(android.os.Process.myPid());
         System.exit(0);
     }
-    public void back(View view)
-    {
+
+    /**
+     * back method is called when we click on Try Again button and this will allow user to attempt again.
+     *
+     * @param view
+     */
+    public void back(View view) {
         Intent goBack = new Intent(ResultActivity.this,ScrollingActivity.class);
         startActivity(goBack);
     }
